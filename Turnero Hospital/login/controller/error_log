@@ -1,0 +1,6 @@
+[25-Sep-2022 20:57:04 America/New_York] PHP Notice:  Undefined index: nombre in /home/managerf/public_html/hospital/login/controller/insertar-paciente.php on line 8
+[25-Sep-2022 20:57:04 America/New_York] PHP Stack trace:
+[25-Sep-2022 20:57:04 America/New_York] PHP   1. {main}() /home/managerf/public_html/hospital/login/controller/insertar-paciente.php:0
+[25-Sep-2022 20:57:04 America/New_York] PHP Notice:  Undefined index: dni in /home/managerf/public_html/hospital/login/controller/insertar-paciente.php on line 9
+[25-Sep-2022 20:57:04 America/New_York] PHP Stack trace:
+[25-Sep-2022 20:57:04 America/New_York] PHP   1. {main}() /home/managerf/public_html/hospital/login/controller/insertar-paciente.php:0

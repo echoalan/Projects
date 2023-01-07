@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*HEADER*/
+
+body {
+    background-color: #cfcfcf;
+}
+
+.header {
+    background-color: #002738;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.son-casper-header{
+    padding: 5px;
+    display: flex;
+}
+
+.casper-header{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img img {
+    width: 48px;
+    height: 48px;
+}
+
+.title-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-header p{
+    color: #889aa2;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+}
+
+/*estilos del formulario de inicio de sesion*/
+
+.main{
+    padding: 5px;
+}
+
+.section-form {
+    padding: 5px;
+}
+
+.article-form {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    width: 300px;
+    gap: 15px;
+    background-color: #fff;
+}
+
+.form h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.input-box{
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+.submit{
+    background-color: #002738;
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+}
