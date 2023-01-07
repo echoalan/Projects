@@ -1,0 +1,340 @@
+/*background logo main = #121718*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto","Trebuchet MS","Tahoma","Verdana","Arial","sans-serif";
+}
+
+body {
+    background-color: #121718;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    height: 55vh;
+}
+
+.header_img_logo {
+    width: 300px;
+}
+
+/*NAV DENTRO DEL HEADER*/
+
+
+nav{
+    background-color: #102c42;
+    height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.active, li a:hover{
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 50px;  
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+			
+
+/*SECTION CON IMAGEN A LA DERECHA - COMIDAS PRINCIPALES*/
+
+.section_derecha {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section_derecha_target{
+    background-color: #121718;
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3_section_derecha {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 5px;
+    border-bottom: 2px solid #f4900c;
+    color: #fff;
+}
+
+.content_img_menu {
+    display: flex;
+}
+
+.img_rabas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*SECTION IZQUIERDA*/
+
+.section_izquierda {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section_izquierda_target{
+    background-color: #121718;
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3_section_izquierda {
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 2px solid #f4900c;
+    padding: 5px;
+    color: #fff;
+}
+
+.content_img_menu {
+    display: flex;
+}
+
+.img_rabas {
+    width: 100%;
+}
+
+
+
+/*EFECTO FADE*/
+
+h3, h4, img {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.transform_up{
+    transform: translateY(-50%);
+}
+
+.transform_down{
+    transform: translateY(50%);
+}
+
+.transform_left{
+    transform: translateX(-50%);
+}
+
+.transform_right{
+    transform: translateX(50%);
+}
+
+.fade_appear{
+	transition: 1.5s;
+	transform: translateX(0);
+}
+
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+
+/*ESTILOS DE LA PAGINA HORARIOS!!*/
+
+.content_horarios{
+    height: 45vh;
+    background-color: #121718;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.h2_horarios {
+    color: #fff;
+    border-bottom: 2px solid #f4900c;
+}
+
+.list_horarios{
+    text-align: center;
+}
+
+.list_horarios p {
+    color: #fff;
+    padding: 5px;
+}
+
+/*ESTILOS PAGINA DIRECCION!!!*/
+
+.section_icon_maps {
+    background-color: #121718;
+    display: flex;
+    justify-content: center;
+}
+
+.section_icon_maps h2 {
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.ubicacion_ico {
+    width: 40px;
+    height: 40px;
+}
+
+.section_api_maps{
+    display: flex;
+    justify-content: center;
+    background-color: #121718;
+}
+
+
+/*ESTILOS PAGINA DE CONTACTO!!!*/
+
+.section_contacto{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section_contacto h1 {
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 2px solid #f4900c;
+}
+
+.section_contacto h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.content_h2_img_contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 5px;
+}
+
+
+/*MEDIA QUERIS DE LA PAGINA MENU*/
+
+/*RESPONSIVE SECCIONES DERECHA */
+
+@media (min-width: 768px){
+    .section_derecha {
+        flex-direction: row;
+    }
+
+    .img_rabas {
+        width: 60vw;
+    }
+
+    .section_derecha_target {
+        width: 40vw;
+        height: auto;
+    }
+
+/*RESPONSIVE SECCIONES IZQUIERDA*/
+
+    .section_izquierda {
+        flex-direction: row;
+    }
+
+    .img_rabas {
+        width: 60vw;
+    }
+
+    .section_izquierda_target {
+        width: 40vw;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 766px){
+    .section_izquierda {
+        flex-direction: column-reverse;
+    }
+
+   
+}
+
