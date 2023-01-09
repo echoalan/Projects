@@ -1,5 +1,6 @@
 <?php
 
+    //este codigo es preventivo!!!!
 
     $us = $_POST['user'];
 
