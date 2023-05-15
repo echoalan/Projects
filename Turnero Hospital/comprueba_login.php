@@ -22,19 +22,7 @@ try {
         die("error: " . $e->getMessage());
     }
 /*
- $base=new pdo ("mysql:host=localhost; dbname=turnos", "root", "");
 
-    conexion contra mi servidor
-
-      /*
-   datos de conexion managerfile
-    
-    $servername = "98.142.101.90";
-    $username = "managerf_turno";
-    $password = "talonbrandzoea1";
-    $dbname = "managerf_turnos";
-   
-    */
 
 ?>
 
