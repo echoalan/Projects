@@ -1,6 +1,6 @@
 <?php
 try {
-        $base=new pdo ("mysql:host=98.142.101.90; dbname=managerf_turnos", "managerf_turno", "talonbrandzoea1");
+        $base=new pdo ("mysql:host=; dbname=", "", "");
         $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql="SELECT * FROM registradores WHERE NOMBRES= :login AND CONTRASENA= :password";
         $resultado=$base->prepare($sql);
